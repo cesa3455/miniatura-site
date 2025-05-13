@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URGENTE: Miniatura em Colapso</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Impact', sans-serif;
+      background-color: #fffbe6;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      border: 3px solid #ff0000;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ff0000;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 4px solid black;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffff00;
+      color: #111;
+      padding: 15px;
+      border: 2px dashed #ff0000;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 18px;
+      font-weight: bold;
+      background: black;
+      color: yellow;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: darkred;
+    }
+
+    .mensagem {
+      display: none;
+      margin-top: 20px;
+      background-color: #ff0000;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      font-weight: bold;
+      border: 3px solid black;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 MINIATURA EM SURTO HORMONAL</h1>
+    <img src="miniatura.jpeg" alt="Miniatura em TPM">
+    <p>
+      Relatos apontam que a criatura conhecida como “miniatura” entrou em colapso após os efeitos da TPM. Foi vista clamando por chocolate e lançando olhares mortais por qualquer contradição.
+    </p>
+    <button onclick="mostrarMensagem()">CLIQUE SE FOR MACHO</button>
+    <div class="mensagem" id="mensagem">
+      ⚠️ AJUDE ESSA MINIATURA A ENGORDAR. DOE CHOCOLATE IMEDIATAMENTE. ⚠️
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+  </script>
+</body>
+</html>
